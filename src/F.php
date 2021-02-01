@@ -17,7 +17,7 @@ class F {
      * @param $default mixed
      * @return mixed
      */
-    public static function get($name, $default){
+    public static function get($name, $default = null){
         return request()->get($name, $default);
     }
 
@@ -27,7 +27,7 @@ class F {
      * @param $default mixed
      * @return mixed
      */
-    public static function post($name, $default){
+    public static function post($name, $default = null){
         return request()->post($name, $default);
     }
 
@@ -50,5 +50,5 @@ class F {
         $pat = "/<(\/?)(script|i?frame|style|html|body|li|i|map|title|img|link|span|u|font|table|tr|b|marquee|td|strong|div|a|p|input|textarea|meta|\?|\%)([^>]*?)>/isU";
         return preg_replace($pat, "", $s);
     }
-    
+
 }
