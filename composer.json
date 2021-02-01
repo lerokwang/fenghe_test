@@ -1,0 +1,15 @@
+{
+    "name": "fenghe/helper",
+    "authors": [
+        {
+            "name": "lerokwang",
+            "email": "lerok1111@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fenghe\\": "package/fenghe/web/src/"
+        }
+    },
+    "require": {}
+}
